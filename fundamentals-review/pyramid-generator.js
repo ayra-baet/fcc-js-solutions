@@ -1,19 +1,19 @@
 // Pyramid Generator with inverted and upright modes
 
 function pyramidGenerator(char, rows, isInverted) {
-    let pyramid = "";
+    let pyramid = [];
 
     if (isInverted) {
         for (let i = rows; i >= 1; i--) {
-            pyramid += " ".repeat(rows - i) + char.repeat(2 * i - 1) + "\n";
+            pyramid.push(" ".repeat(rows - i) + char.repeat(2 * i - 1));
         }
     } else {
         for(let i = 1; i <= rows; i++) {
-            pyramid += " ".repeat(rows - i) + char.repeat(2 * i - 1) + "\n";
+            pyramid.push(" ".repeat(rows - i) + char.repeat(2 * i - 1));
         }
     }
     
-    return pyramid;
+    return "\n" + pyramid.join("\n") + "\n";
 }
 
 console.log(pyramidGenerator("o", 4, true));
