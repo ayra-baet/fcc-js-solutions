@@ -45,4 +45,4 @@ function studentMsg(scores, score) {
 console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
 console.log(getGrade(79));
 console.log(hasPassingGrade(79));
-console.log(studentMsg([15, 25, 35, 45, 55, 60, 70, 60], 75))
+console.log(studentMsg([15, 25, 35, 45, 55, 60, 70, 60], 75));
